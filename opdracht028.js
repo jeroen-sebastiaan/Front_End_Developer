@@ -1,12 +1,10 @@
 // Even Odd Reporter
-for (i = 1; i <= 20; i++){
+for (let i = 1; i <= 20; i++){
     if (i % 2 === 0){
-    console.log(i + ' is even.')
-    return i;
+    console.log(i + ' is even.');
     }
     else{
-    console.log(i + ' is oneven.')
-    return i;
+    console.log(i + ' is oneven.');
     }  
 }; 
 
