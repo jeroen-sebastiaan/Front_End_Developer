@@ -1,0 +1,106 @@
+@import"_reset.scss";
+
+body{
+    background-color: lightgray;
+}
+
+.btn-toggle-nav{
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+    background-image: url("hamburger_menu.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.nav-main{
+    width: 200px;
+    position: fixed;
+    top: 60px;
+    left: 15px;
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    &__blind{
+        visibility: hidden;
+    }
+}
+
+li {
+    list-style: none;
+    width: 200px;
+    border: 2px solid gray;
+    line-height: 50px;
+    margin-bottom: -2px;
+    &:hover{
+        opacity: 0.6;
+    }
+    & a {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    }
+}
+
+
+
+.grey{
+    background-color: lightgrey;
+}
+
+.green{
+    background-color: green;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.purple{
+    background-color: purple;
+}
+/*CHEATSHEET 
+
+@mixin flexCenter(optioneel: $direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+header{
+    @include flexCenter(optioneel: column, blue);
+    background-color: $textcolor;
+    height: 600px;
+    color: $textcolor;
+    button{
+        background: $primary_button;
+        &:hover of ::after{
+            content: "Hello";
+        }
+    }
+}
+
+.class{
+    @extend header; 
+    background-color: aquamarine;
+}
+@import "./_importfile"; 
+@import "./variables"; */

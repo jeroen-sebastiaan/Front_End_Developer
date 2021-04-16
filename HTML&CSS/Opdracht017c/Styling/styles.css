@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #c3cfe2;
+  overflow-x: hidden;
+}
+
+li {
+  width: 330px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: -webkit-transform ease-in-out 400ms;
+  transition: -webkit-transform ease-in-out 400ms;
+  transition: transform ease-in-out 400ms;
+  transition: transform ease-in-out 400ms, -webkit-transform ease-in-out 400ms;
+}
+
+li:hover {
+  -webkit-transform: translateX(-280px);
+          transform: translateX(-280px);
+}
+
+span {
+  margin: 10px 20px 10px 5px;
+}
+
+.social--media {
+  list-style-type: none;
+  position: absolute;
+  top: 350px;
+  right: -300px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: white;
+}
+
+.social--media__text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  text-decoration: underline;
+  color: white;
+}
+
+.social--media__blog {
+  background-color: #e17b77;
+}
+
+.social--media__facebook {
+  background-color: #3b5998;
+}
+
+.social--media__github {
+  background-color: #333;
+}
+
+.social--media__twitter {
+  background-color: #00aced;
+}
+
+.social--media__linkedin {
+  background-color: #007bb6;
+}
+
+.fas fa-laptop-code::before {
+  content: "\f5fc";
+}
+
+.fab fa-facebook-f::before {
+  content: "\f39e";
+}
+
+.fab fa-twitter::before {
+  content: "\f099";
+}
+
+.fab fa-github::before {
+  content: "\f09b";
+}
+
+.fab fa-linkedin::before {
+  content: "\f0e1";
+}
+/*# sourceMappingURL=styles.css.map */

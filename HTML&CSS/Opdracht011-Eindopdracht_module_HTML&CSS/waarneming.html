@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title> Meld hier je waarneming</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="style-waarneming.css">
+        <link rel="stylesheet" type="text/css" href="grid.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <div class="parent-waarneming">
+            <header>
+                <h1><a href="index.html"><img width="50" src="ijsvogel-v2.png" alt="ijsvogel-v2"></a> Wilde dieren in Nederland</h1>
+            </header>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="nieuws.html">Nieuws</a>
+                <a href="over_ons.html">About</a>
+                <a href="waarneming.html">Waarneming</a>
+            </nav>
+            <main>
+                <h2>Heb jij een bijzonder waarneming gedaan? Meld het hier!</h2>
+                <img width="80%" src="waarneming.png" alt="Bijzondere waarneming melden">
+                <form class="flex-container" name="waarneming" method="POST" data-netlify="true">
+                    <div class="flex-item-left">
+                        <h3>Waargenomen dier</h3>
+                        <p><label>Naam van de soort: <input type="text" name="Naam"/></label></p>
+                        <p><label>Diersoort: </label></p>
+                        <p><label>Zoogdier <input type="radio" value="Zoogdier" name="Diersoort"></label>
+                            <label>Vogel <input type="radio" value="Vogel" name="Diersoort"></label>
+                            <label>Amfibie <input type="radio" value="Amfibie" name="Diersoort"></label>
+                            <label>Overig <input type="radio" value="Overig" name="Diersoort"></label></p>
+                        <p><label> De kleur van het dier: <input type="color" name="animalcolor" value="#ff0000"></label></p>
+                        <p><label>Aantal: <input type="number" name="Aantal" min="0" max="1000"></label></p>
+                        <p><label>Datum: <input type="date" name="Datum"></label></p>
+                        <p><label>Tijdstip: <input type="time" name="Tijdstip"></label></p>
+                        <p><label>Uploaden van een foto: <input type="file" name="foto"></label></p>
+                        <p><label>Extra informatie:</label></p>
+                            <label>Stedelijk gebied <input type="checkbox" name="extra" value="Stedelijk gebied"></label>
+                            <label>Natuurgebied <input type="checkbox" name="extra" value="Natuurgebied"></label>
+                            <label>Dwaalgast <input type="checkbox" name="extra" value="Dwaalgast"></label>
+                            <label>Gewond <input type="checkbox" name="extra" value="Gewond"></label>
+                    </div>
+                    <div class="flex-item-right">
+                        <h3>Contactgegevens</h3>
+                    <p><label>Naam: <input type="text" name="Naam"/></label></p>
+                    <p><label>E-mailadres: <input type="email" name="e-mailadres" /></label></p>
+                    <p><label>Telefoonnummer: <input type="tel" name="Telefoonnummer" pattern="[0-9]{10}"></label></p>
+                    <p><label>Ruimte voor opmerkingen: <textarea name="opmerking"></textarea></label></p>        
+                    <p><button type="reset">Maak alle velden leeg</button>
+                    <button type="submit">Verstuur gegevens</button></p>
+                    </div>
+                </form>                    
+            </main>  
+            <footer>
+                <p>Ik ben nog lang niet tevreden. Maar het begin is er.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-weight: normal;
+    text-align: center;
+    background-color: bisque; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 1fr 5fr 3fr 1fr; 
+}
+
+.header{
+    border: 3px solid black;
+    background-color: red;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.main{
+    border: 3px solid black;
+    background-color: white;
+    grid-area:  2 / 2 / 3 / 3;
+}
+
+.widget-area{
+    border: 3px solid black;
+    background-color: blue;
+    grid-area:  3 / 2 / 4 / 3;
+}
+
+.footer{
+    border: 3px solid black;
+    background-color: orange;
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+@media (min-width: 500px){
+    body{
+        background-color:brown;
+        margin: 20px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .header{
+        border: 3px solid black;
+        background-color: red;
+        grid-area: 1 / 1 / 8 / 2;
+    }
+    
+    .main{
+        border: 3px solid black;
+        background-color: white;
+        grid-area:  1 / 2 / 5 / 6;
+    }
+    
+    .widget-area{
+        border: 3px solid black;
+        background-color: blue;
+        grid-area:  5 / 2 / 7 / 6;
+    }
+    
+    .footer{
+        border: 3px solid black;
+        background-color: orange;
+        grid-area: 7 / 2 / 8 / 6;
+    }
+}
+
+@media (min-width: 1024px) {
+    body{
+        background-color: green;
+        margin: 20px;
+        }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 5px;
+    }
+
+    .header{
+        border: 3px solid black;
+        background-color: red;
+        grid-area:  1 / 1 / 7 / 2;
+    }
+    
+    .main{
+        border: 3px solid black;
+        background-color: white;
+        grid-area:  1 / 2 / 7 / 5;
+    }
+    
+    .widget-area{
+        border: 3px solid black;
+        background-color: blue;
+        grid-area:   1 / 5 / 7 / 7;
+    }
+    
+    .footer{
+        border: 3px solid black;
+        background-color: orange;
+        grid-area:  7 / 1 / 8 / 7;
+    }  
+}
+
+/*/ Smartphones (portrait)
+minimale breedte : 320px;
+
+// Tablets (portrait)
+minimale breedte : 768px
+
+// Desktop 
+minimale breedte : 1024px;

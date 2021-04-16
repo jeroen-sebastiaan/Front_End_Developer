@@ -1,0 +1,72 @@
+@import"_reset.scss";
+
+body{
+    background-color: #c3cfe2;
+    overflow-x: hidden;
+}
+
+li{
+    width: 330px;
+    height: fit-content;
+    transform: translateX(0px);
+    transition: transform ease-in-out 400ms;
+    &:hover{
+        transform: translateX(-280px);
+        }
+}
+
+span{
+    margin: 10px 20px 10px 5px;
+}
+
+.social--media{
+    list-style-type: none;
+    position: absolute;
+    top: 350px;
+    right: -300px;
+    margin: 0;
+    padding: 0;
+    display: inline-block; 
+    color: white;
+    &__text{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-decoration: underline;
+        color: white;
+    }
+    &__blog {
+        background-color: #e17b77; 
+    }
+    &__facebook {
+        background-color: #3b5998;
+    }
+    &__github {
+    background-color: #333;
+    }
+    &__twitter {
+        background-color: #00aced;
+    }
+    &__linkedin {
+    background-color: #007bb6;
+    }
+}
+
+.fas fa-laptop-code::before {
+    content: "\f5fc";
+}
+
+.fab fa-facebook-f::before {
+content: "\f39e";
+}
+
+.fab fa-twitter::before {
+content: "\f099";
+}
+
+.fab fa-github::before {
+content: "\f09b";
+}
+
+.fab fa-linkedin::before {
+content: "\f0e1";
+}

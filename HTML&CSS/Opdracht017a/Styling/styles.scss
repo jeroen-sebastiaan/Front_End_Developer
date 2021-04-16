@@ -1,0 +1,51 @@
+body{
+    background-color: #c3cfe2;
+    margin: 50px 20%;
+}
+
+@mixin flexcenter(){
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 5px 0px grey;
+    width: 300px;
+}
+
+.testimonial{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 500;
+    letter-spacing: 1px;
+    &--top{
+        @include flexcenter();
+        background-color: #fff;
+        border-radius: 14px 14px 0px 0px;
+        &__text {
+        margin: 10px;
+        height: 220px;
+        line-height: 1.5rem;
+        }
+    }
+    &--bottom{
+        @include flexcenter();
+        background-color: #686de0;
+        border-radius: 0px 0px 14px 14px;
+        text-align: center;
+        height: 150px;
+        &__naam{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #fff;
+        }
+        &__link{
+        margin-bottom: 15px;
+        color: lightgrey;
+        text-decoration: none;
+        }
+        &__foto{
+            margin-top: -55px;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            align-self: center;
+        }
+    }
+}

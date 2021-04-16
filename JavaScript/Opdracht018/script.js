@@ -1,0 +1,15 @@
+console.log('Hello Winc Acacemy');
+let naam = 'Jeroen';
+console.log(naam);
+let sumNumbers = 4 + 4;
+console.log(sumNumbers);
+let sumString = '4' + '4';
+console.log(sumString);
+console.log(12 - 8);
+console.log(3*3);
+console.log(12/4);
+console.log(16%5);
+let leeftijdString = "48";
+console.log(typeof leeftijdString);
+let leeftijdNumber = 48;
+console.log(typeof leeftijdNumber);

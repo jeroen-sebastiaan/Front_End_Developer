@@ -1,0 +1,30 @@
+@import"_reset.scss";
+
+/*CHEATSHEET 
+
+@mixin flexCenter(optioneel: $direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+header{
+    @include flexCenter(optioneel: column, blue);
+    background-color: $textcolor;
+    height: 600px;
+    color: $textcolor;
+    button{
+        background: $primary_button;
+        &:hover of ::after{
+            content: "Hello";
+        }
+    }
+}
+
+.class{
+    @extend header; 
+    background-color: aquamarine;
+}
+@import "./_importfile"; 
+@import "./variables"; */
