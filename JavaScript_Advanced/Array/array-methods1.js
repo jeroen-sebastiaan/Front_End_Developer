@@ -34,6 +34,11 @@ console.log(stringsTogether.join(' ')) ;
 
 // Opdracht G
 const combineArrays = function(array1, array2) {
+<<<<<<< HEAD:JavaScript_Advanced/Array/array-methods1.js
     return array1.concat(array2);}
     
+=======
+  return array1.concat(array2);
+  
+>>>>>>> e93ef57ad9a8e82e30faed1ef0069a578779a93f:JavaScript_Advanced/Array/array.js
 console.log(combineArrays([1, 2, 3], [4, 5, 6]));
