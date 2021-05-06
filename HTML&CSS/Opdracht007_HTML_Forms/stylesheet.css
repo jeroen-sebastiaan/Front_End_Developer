@@ -18,7 +18,6 @@ header{
     width: 80%;
 }
 
-
 ul.navigatie{
     border:6px ridge teal;
     border-radius: 16px;
@@ -53,3 +52,31 @@ li a.navigatie{
 li a.navigatie:hover {
     background-color: rgb(12, 235, 41);
 }
+
+form input{
+    font-size: large;
+}
+
+form textarea{
+    font-size:large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 320px) {}
+
+@media(min-width: 1024px) {
+    body{
+        background-color: lightgrey;
+        color: rgb(10, 31, 31);
+        font-size: normal;
+        line-height: 30px;
+    }
+}
+/*/ Smartphones (portrait)
+minimale breedte : 320px;
+
+// Tablets (portrait)
+minimale breedte : 768px
+
+// Desktop 
+minimale breedte : 1024px*/ 

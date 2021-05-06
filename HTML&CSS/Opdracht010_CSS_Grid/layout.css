@@ -1,119 +1,121 @@
-.parent{
-    background-color: bisque;
-    display: grid;
-    grid-template-rows: 20px 1fr 300px 20px; 
-    grid-template-columns: repeat(4, 1fr);
-    height: 1000px;
-    grid-template-areas: 
-    ". header header ."
-    ". main main ."
-    ".  main aside ."
-    ". main footer .";
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-weight: normal;
+    text-align: center;
+    background-color: bisque; 
 }
 
-header{
+.container{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 1fr 5fr 3fr 1fr; 
+}
+
+.header{
     border: 3px solid black;
     background-color: red;
-    grid-area: header;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
-main{
+.main{
     border: 3px solid black;
     background-color: white;
-    grid-area: main;
+    grid-area:  2 / 2 / 3 / 3;
 }
 
-aside{
+.widget-area{
     border: 3px solid black;
     background-color: blue;
-    grid-area: aside;
+    grid-area:  3 / 2 / 4 / 3;
 }
 
-footer{
+.footer{
     border: 3px solid black;
     background-color: orange;
-    grid-area: footer;
+    grid-area: 4 / 2 / 5 / 3;
 }
 
 @media (min-width: 500px){
-    .parent{
-        background-color: brown;
-        display: grid;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-areas: 
-        "header main main main main"
-        "header main main main aside"
-        "header main main main aside"
-        "header main main main asid "
-        "header main main main main"
-        "header main main main main"
-        "footer footer footer footer footer";   
+    body{
+        background-color:brown;
+        margin: 20px;
     }
 
-    header{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .header{
         border: 3px solid black;
         background-color: red;
-        grid-area: header;
+        grid-area: 1 / 1 / 8 / 2;
     }
     
-    main{
+    .main{
         border: 3px solid black;
         background-color: white;
-        grid-area: main;
+        grid-area:  1 / 2 / 5 / 6;
     }
     
-    aside{
+    .widget-area{
         border: 3px solid black;
         background-color: blue;
-        grid-area: aside;
+        grid-area:  5 / 2 / 7 / 6;
     }
     
-    footer{
+    .footer{
         border: 3px solid black;
         background-color: orange;
-        grid-area: footer;
+        grid-area: 7 / 2 / 8 / 6;
     }
 }
 
 @media (min-width: 1024px) {
-    .parent{
+    body{
         background-color: green;
+        margin: 20px;
+        }
+
+    .container{
         display: grid;
-        grid-template-rows: repeat(7, 1fr);
         grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
         grid-gap: 5px;
-        grid-template-areas: 
-        "header main main main main main"
-        "header main main main aside aside"
-        "header main main main aside aside"
-        "header main main main aside aside"
-        "header main main main aside aside"
-        "header main main main aside aside"
-        "header footer footer footer footer footer";   
     }
 
-    header{
+    .header{
         border: 3px solid black;
         background-color: red;
-        grid-area:  header;
+        grid-area:  1 / 1 / 7 / 2;
     }
     
-    main{
+    .main{
         border: 3px solid black;
         background-color: white;
-        grid-area: main;
+        grid-area:  1 / 2 / 7 / 5;
     }
     
-    aside{
+    .widget-area{
         border: 3px solid black;
         background-color: blue;
-        grid-area: aside;
+        grid-area:   1 / 5 / 7 / 7;
     }
     
-    footer{
+    .footer{
         border: 3px solid black;
         background-color: orange;
-        grid-area: footer;
+        grid-area:  7 / 1 / 8 / 7;
     }  
 }
+
+/*/ Smartphones (portrait)
+minimale breedte : 320px;
+
+// Tablets (portrait)
+minimale breedte : 768px
+
+// Desktop 
+minimale breedte : 1024px;
