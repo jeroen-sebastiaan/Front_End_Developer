@@ -1,12 +1,12 @@
 const huisWerkMaken = function(vak, callback) {
-    console.log("Ok, ok ik ga nu mijn ${vak} af maken");
+    console.log("Ok, ok ik ga nu mijn", (vak), "afmaken");
     callback();
 };
 
 const klaarMetHuisWerk = function () {
-    console.log("Kijk Paps/Mams, ik ben klaar met mijn huiswerk!");
+    setTimeout(() => {
+        console.log("Kijk Paps/Mams, ik ben klaar met mijn huiswerk!");
+    }, 2000);  
 };
 
-vak = "wiskunde"
-huisWerkMaken(vak, klaarMetHuisWerk);
-console.log("test");
+huisWerkMaken("wiskunde", klaarMetHuisWerk);
