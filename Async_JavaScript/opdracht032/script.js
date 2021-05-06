@@ -1,5 +1,6 @@
+const vak = "";
 const huisWerkMaken = function(vak, callback) {
-    console.log("Ok, ok ik ga nu mijn", (vak), "afmaken");
+    console.log("Ok, ok ik ga nu mijn ${vak} afmaken");
     callback();
 };
 
