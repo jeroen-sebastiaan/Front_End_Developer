@@ -1,0 +1,1 @@
+getData("https://api.themoviedb.org/3/movie/550?api_key=e8a86bf6432d350ce26bacdc92cf7c9e")
