@@ -1,7 +1,7 @@
 //  Opdracht API client
 const getData = async (data) => {
     try {
-        const response = await fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=e8a86bf6432d350ce26bacdc92cf7c9e", {
+        const response = await fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=", {
             method: "GET",
             });
         const data = await response.json();
