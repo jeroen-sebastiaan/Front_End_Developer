@@ -48,7 +48,7 @@ const makeLi = (data) => {
 const addId = (data) => {
     const selectId = data.genres.map((i) => i.id);
     const li = document.querySelectorAll("li");
-    for (i = 0; i <= li.length;) {
+    for (let i = 0; i <= li.length;) {
         const setId = selectId.forEach((id) => {
             const text = ", id: "
             const idText = text.concat(id);
