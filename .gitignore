@@ -1,3 +1,4 @@
+C:\Users\Jeroen\Good Cloud\WincAcademy\Front_End_Developer\Jest
 Jest/node_modules/.package-lock.json
 Jest/node_modules/.bin/acorn
 Jest/node_modules/.bin/acorn.cmd
@@ -4992,11 +4993,8 @@ Jest/node_modules/lodash/fp/isInteger.js
 Jest/node_modules/lodash/fp/isLength.js
 Jest/node_modules/lodash/fp/isMap.js
 Jest/node_modules/lodash/fp/isMatch.js
-Jest/node_modules/lodash/fp/isMatchWith.js
-Jest/node_modules/lodash/fp/isNaN.js
-Jest/node_modules/lodash/fp/isNative.js
-Jest/node_modules/lodash/fp/isNil.js
 Jest/node_modules/lodash/fp/T.js
+.vscode/settings.json
 Jest/package-lock.json
 Jest/package.json
 Jest/node_modules/lodash/fromPairs.js
@@ -5242,6 +5240,10 @@ Jest/node_modules/lodash/zip.js
 Jest/node_modules/lodash/zipObject.js
 Jest/node_modules/lodash/zipObjectDeep.js
 Jest/node_modules/lodash/zipWith.js
+Jest/node_modules/lodash/fp/isMatchWith.js
+Jest/node_modules/lodash/fp/isNaN.js
+Jest/node_modules/lodash/fp/isNative.js
+Jest/node_modules/lodash/fp/isNil.js
 Jest/node_modules/lodash/fp/isNull.js
 Jest/node_modules/lodash/fp/isNumber.js
 Jest/node_modules/lodash/fp/isObject.js
